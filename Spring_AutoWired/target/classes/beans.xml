@@ -5,9 +5,17 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 
-<bean id="heart" class="org.tnsindia.springautowired.Heart"/>
-<bean id="human" class="org.tnsindia.springautowired.Human" autowire="constructor">
+<context:annotation-config/>
+<bean id="Humanheart" class="org.tnsindia.springautowired.Heart">
+	<property name="nameOfAnimal" value="Human"/>
+	<property name="noOfHeart" value="1"/>
+	</bean>
+
+<bean id="Octopusheart" class="org.tnsindia.springautowired.Heart">
+	<property name="nameOfAnimal" value="Octopus"/>
+	<property name="noOfHeart" value="2"/>
+</bean>
+<bean id="human" class="org.tnsindia.springautowired.Human">
 
 </bean>
-
 </beans>

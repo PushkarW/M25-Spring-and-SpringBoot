@@ -5,5 +5,9 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 
-<bean id="sim" class="org.tnsindia.springioc.Jio"></bean>
+<bean id="heart" class="org.tnsindia.springautowired.Heart"/>
+<bean id="human" class="org.tnsindia.springautowired.Human" autowire="constructor">
+
+</bean>
+
 </beans>
